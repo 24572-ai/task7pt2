@@ -14,8 +14,9 @@ def print_all_aircraft():
     cursor.execute(sql)
     results = cursor.fetchall()
     #loop through all results
+    print ('Name               speed    max_g    climb    range    payload')
     for fighter in results:
-        print (fighter)
+        print (f'{fighter[1]:<20}{fighter[2]:<10}{fighter[3]:<8}{fighter[4]:<8}{fighter[5]:<10}{fighter[6]:<10}')
     #loop ends
     db.close()
 
