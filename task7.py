@@ -22,4 +22,11 @@ def print_all_aircraft():
 
 
 #main code
-print_all_aircraft()
+while True:
+    user_input =input('\nWhat would you like to learn?\n1. Print all aircraft\n2. Exit the programme\n')
+    if user_input == "1":
+        print_all_aircraft()
+    elif user_input == "2":
+        break
+    else:
+        print("I'm sorry, but that isnt an option")
